@@ -1,0 +1,298 @@
+body{background: #f06d06;font-size: 80%;}
+
+/*  #############  水平居中   ##################  */
+/*行内元素 水平居中*/
+/*header,nav{
+	text-align: center;
+	background: white;
+	margin: 20px 0;
+	padding: 10px;
+}
+nav a{
+	text-decoration: none;
+	background: #333;
+	border-radius: 5px;
+	color: white;
+	padding: 3px 8px;
+}*/
+
+/*一个块级元素 水平居中*/
+/*main{
+	background: white;
+	margin:20px 0;
+	padding:10px;
+}
+.center{
+	margin: 0 auto;	
+	width: 200px;
+	background: black;
+	padding: 20px;
+	color: white;
+}*/
+
+/*多个块级元素 水平居中*/
+/*main{
+	background: white;
+	margin:20px 0;
+	padding:10px;
+}
+main div{
+	background: black;
+	color: white;
+	padding: 15px;
+	max-width: 125px;
+	margin:5px;
+}
+.inline-block-center{text-align:center;}
+.inline-block-center div{
+	display: inline-block;
+	text-align: left;
+}
+.flex-center{display: flex;justify-content:center;}*/
+
+
+/*  #############  垂直居中    ##################  */
+/*行内元素垂直居中 方案一：
+  .##{padding-top:30px;padding-bottom:30px}
+ * */
+/*nav{
+	background:white;
+	margin:20px 0;
+	padding:50px;
+}
+nav a{
+	background:black;
+	color:white;
+	padding:40px 30px;
+	text-decoration: none;
+}*/
+
+/*行内元素垂直居中 方案二：
+  .##{height:100px;line-height:100px;white-space:nowrap;}
+ * */
+/*main {
+  background: white;
+  margin: 20px 0;
+  padding: 40px;
+}
+main div{
+	background: black;
+	color: white;
+	height: 100px;
+	line-height: 100px;
+	padding:20px;
+	width:50%;
+	white-space: nowrap;
+}*/
+
+/*多行 垂直居中*/
+/*table{
+	background: white;
+	width:240px;
+	border-collapse: separate;
+	margin:20px;
+	height: 250px;
+}
+table td{
+	background: black;
+    color: white;
+	padding:20px;
+	border:10px solid white;
+}
+.center-table{
+	display: table;
+	height: 250px;
+	background: white;
+	width: 240px;
+	margin:20px;
+}
+.center-table p{
+	display: table-cell;
+	margin:0;
+	background: black;
+	color: white;
+	padding:20px;
+	border:10px solid white;
+	vertical-align: middle;
+}*/
+
+/*flex 垂直居中
+  .##{display:flex;justify-content:center;flex-direction;height:400px}
+ * */
+/*div{
+  background: white;
+  width: 240px;
+  margin: 20px;
+}
+.flex-center{
+	background: black;
+	color: white;
+	border:10px solid white;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 200px;
+	resize: vertical;
+	overflow: auto;
+}
+.flex-center p {
+	margin: 0;
+	padding:20px;
+}*/
+
+/*伪元素垂直居中*/
+/*div {
+  background: black;
+  width: 240px;
+  height: 200px;
+  margin: 20px;
+  color: white;
+  resize: vertical;
+  overflow: auto;
+  padding: 20px;
+}
+.center{position: relative;}
+.center::before{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width:1%;
+	vertical-align: middle;
+}
+.center p{
+	display: inline-block;
+	vertical-align: middle;
+	width: 190px;
+	margin:0;
+	padding:20px;
+	background: black;
+}*/
+
+/*块级元素垂直居中 */
+/*main {
+  background: white;
+  height: 300px;
+  margin: 20px;
+  width: 300px;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+main div {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 20px;
+}*/
+/* 方案一*/
+/*知道宽和高的情况下*/
+/*main div {
+  height: 100px;
+  margin-top: -70px; /* account for padding and border if not using box-sizing: border-box; */
+/*}
+
+/*方案二*/
+/*不知道宽和高的情况下*/
+/*main div {
+  transform: translateY(-50%);
+  resize: vertical;
+  overflow: auto;
+}*/
+
+/*块级元素垂直居中之flex*/
+/*main {
+  background: white;
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}
+
+main div {
+  background: black;
+  color: white;
+  padding: 20px;
+  resize: vertical;
+  overflow: auto;
+}*/
+
+/*  #############  垂直和水平居中   ##################  */
+/*main {
+  position: relative;
+  background: white;
+  height: 200px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+main div {
+  background: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+}*/
+/*方案一*/
+/*知道宽和高的情况下*/
+/*main div{
+  width: 200px;
+  height: 100px;
+  margin: -70px 0 0 -120px;
+}*/
+/*方案二*/
+/*不知道宽和高的情况下*/
+/*main div{
+  width: 50%;
+  transform:translate(-50%,-50%) ;
+  resize: both;
+  overflow: auto;
+}*/
+
+
+/* 垂直水平居中之flex*/
+main {
+  background: white;
+  height: 200px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+main div {
+  background: black;
+  color: white;
+  width: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
